@@ -1,0 +1,106 @@
+baseURL: "https://luoyuxia.github.io/"
+title: "Yuxia's Blog"
+paginate: 10
+theme: PaperMod
+defaultContentLanguage: zh
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "Yuxia's Blog"
+  description: "Apache Flink Committer | 大数据 & 流处理"
+  keywords: [Flink, 流处理, 大数据, 分布式系统, 开源]
+  author: "Yuxia Luo"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  homeInfoParams:
+    Title: "Hi, I'm Yuxia Luo"
+    Content: >
+      Apache Flink Committer / Apache Fluss (incubating) PPMC @ Alibaba Cloud
+
+      - 专注于大数据、流处理、分布式系统、AI
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/luoyuxia"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/yuxia-luo-32720336a/"
+    - name: email
+      url: "mailto:luoyuxia@alumni.sjtu.edu.cn"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: true
+
+  editPost:
+    URL: "https://github.com/luoyuxia/luoyuxia.github.io/tree/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 10
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
