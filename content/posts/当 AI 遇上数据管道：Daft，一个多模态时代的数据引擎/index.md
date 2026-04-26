@@ -1,3 +1,14 @@
+---
+title: "当 AI 遇上数据管道：Daft，一个多模态时代的数据引擎"
+date: 2025-04-26T12:00:00+08:00
+draft: false
+tags: ["Daft", "数据引擎", "多模态", "AI"]
+categories: ["数据工程"]
+summary: "Daft 是一个为多模态 AI 工作负载设计的数据引擎。Python API + Rust 引擎，原生支持图片、音频、视频等非结构化数据类型，同一份代码从笔记本无缝扩展到分布式集群。本文从 What / Why / How 三个维度介绍 Daft 的设计哲学和关键技术。"
+ShowToc: true
+TocOpen: false
+---
+
 # 当 AI 遇上数据管道：Daft，一个多模态时代的数据引擎
 
 ## 从一个真实问题说起
