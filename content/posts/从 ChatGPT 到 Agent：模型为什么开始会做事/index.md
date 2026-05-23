@@ -1,6 +1,6 @@
 ---
 title: "从 ChatGPT 到 Agent：模型为什么开始会做事"
-date: 2026-05-24T12:00:00+08:00
+date: 2026-05-23T20:00:00+08:00
 draft: false
 tags: ["ChatGPT", "AI Agent", "Chain-of-Thought", "ReAct", "大语言模型"]
 categories: ["AI"]
