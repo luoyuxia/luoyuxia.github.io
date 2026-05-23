@@ -31,6 +31,8 @@ TocOpen: false
 > 作者：Tom Brown, Benjamin Mann, Nick Ryder 等（OpenAI）
 > 发表：2020 年
 
+> 关于 GPT-1 到 GPT-3 的完整技术演进，可以参考[《从 GPT-1 到 GPT-3：现代大语言模型的技术底座是如何形成的》]({{< ref "/posts/从 GPT-1 到 GPT-3：现代大语言模型的技术底座是如何形成的" >}})。
+
 ### 这篇论文做了什么
 
 GPT-3 训练了一个 1750 亿参数的自回归语言模型，使用了约 300B token 的混合语料（包括 Common Crawl 过滤后数据、WebText2、Books 语料和 Wikipedia）。论文同时训练了从 1.25 亿到 1750 亿共 8 个不同规模的模型，用于观察能力如何随规模变化。
