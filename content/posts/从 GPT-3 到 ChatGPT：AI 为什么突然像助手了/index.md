@@ -1,6 +1,6 @@
 ---
 title: "从 GPT-3 到 ChatGPT：AI 为什么突然像助手了"
-date: 2026-05-23T18:00:00+08:00
+date: 2026-05-23T12:00:00+08:00
 draft: false
 tags: ["GPT-3", "ChatGPT", "RLHF", "InstructGPT", "大语言模型"]
 categories: ["AI"]
