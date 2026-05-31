@@ -438,7 +438,7 @@ WHERE o.amount > 100
 GROUP BY u.dept
 ```
 
-对应的 dataflow 管线是：`orders → filter(amount > 100) → join(users) → map(extract dept) → reduce(count)`
+对应的 dataflow pipeline是：`orders → filter(amount > 100) → join(users) → map(extract dept) → reduce(count)`
 
 当 orders 中新增一条记录 $(user\_id=1, amount=150)$ 时，增量的传播路径：
 
@@ -449,7 +449,7 @@ GROUP BY u.dept
 
 如果这条订单的 amount 是 50（不满足 filter），则在第 1 步就被丢弃，后续所有算子零开销。如果 user_id = 1 在 users 中不存在，join 在第 2 步不会产生匹配，后续也是零开销。**增量沿着受影响的路径传播，不受影响的路径完全静默。**
 
-![增量在 dataflow 管线中沿着受影响路径传播](images/03-incremental-propagation.png)
+![增量在 dataflow pipeline中沿着受影响路径传播](images/03-incremental-propagation.png)
 
 ### Iterate：增量化的迭代
 
@@ -613,7 +613,7 @@ Differential dataflow 和 Flink 这样的流处理引擎在表面上有很多相
 
 ### 相似之处
 
-对于简单的流式管线（filter → join → agg，不涉及迭代），两者的行为确实非常接近：
+对于简单的流式pipeline（filter → join → agg，不涉及迭代），两者的行为确实非常接近：
 
 - 都是"变更进来，变更出去"——每个算子收到输入变更后，更新自己的状态，产出输出变更
 - 有状态算子（join、agg）都需要维护索引——Flink 叫 state（存在 RocksDB 或堆内存中），DD 叫 arrangement
