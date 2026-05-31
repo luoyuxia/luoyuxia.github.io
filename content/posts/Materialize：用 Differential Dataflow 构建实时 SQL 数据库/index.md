@@ -1,5 +1,5 @@
 ---
-title: "Materialize：用 Dataflow 构建实时 SQL 数据库"
+title: "Materialize：用 Differential Dataflow 构建实时 SQL 数据库"
 date: 2026-05-30T18:00:00+08:00
 draft: false
 tags: ["Dataflow", "增量计算", "Materialize", "分布式系统", "流计算", "SQL"]
